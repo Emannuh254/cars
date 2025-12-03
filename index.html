@@ -45,7 +45,7 @@
       </nav>
       <div class="header__container" id="home">
         <div class="header__image">
-          <img src="assets/header.png" alt="header" />
+          <img src="assets/header.png" alt="header" loading="lazy" />
         </div>
         <div class="header__content">
           <h2>👍 Kenya's Most Trusted Car Rental Platform</h2>
@@ -68,24 +68,27 @@
             name="location"
             id="location"
             placeholder="Nairobi CBD – Kenyatta Avenue"
+            required
           />
         </div>
         <div class="input__group">
           <label for="start">Pick up date</label>
           <input
-            type="text"
+            type="date"
             name="start"
             id="start"
             placeholder="Aug 16, 10:00 AM"
+            required
           />
         </div>
         <div class="input__group">
           <label for="stop">Return date</label>
           <input
-            type="text"
+            type="date"
             name="stop"
             id="stop"
             placeholder="Aug 18, 10:00 PM"
+            required
           />
         </div>
         <button class="btn">Search <i class="ri-search-line"></i></button>
@@ -177,16 +180,16 @@
           value and experience. Book now and drive your favorite ride at an 
           incredible rate!
         </p>
-        <div class="deals__tabs">
-          <button class="btn active" data-id="SUV">SUVs</button>
-          <button class="btn" data-id="Sedan">Sedans</button>
-          <button class="btn" data-id="Luxury">Luxury</button>
-          <button class="btn" data-id="Economy">Economy</button>
-          <button class="btn" data-id="Safari">Safari</button>
+        <div class="category__tabs">
+          <button class="category__tab active" data-id="SUV">SUVs</button>
+          <button class="category__tab" data-id="Sedan">Sedans</button>
+          <button class="category__tab" data-id="Luxury">Luxury</button>
+          <button class="category__tab" data-id="Economy">Economy</button>
+          <button class="category__tab" data-id="Safari">Safari</button>
         </div>
         <div id="SUV" class="tab__content active">
           <div class="deals__card">
-            <img src="assets/deals-1.png" alt="Toyota Land Cruiser Prado" />
+            <img src="assets/deals-1.png" alt="Toyota Land Cruiser Prado" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -210,17 +213,16 @@
                 <span><i class="ri-car-line"></i></span> Diesel
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 14,500<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-2.png" alt="Subaru Forester" />
+            <img src="assets/deals-2.png" alt="Subaru Forester" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -244,17 +246,16 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 6,800<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-3.png" alt="Toyota Noah" />
+            <img src="assets/deals-3.png" alt="Toyota Noah" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -278,10 +279,9 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 6,500<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
@@ -290,7 +290,7 @@
         </div>
         <div id="Sedan" class="tab__content">
           <div class="deals__card">
-            <img src="assets/deals-4.png" alt="Toyota Premio" />
+            <img src="assets/deals-4.png" alt="Toyota Premio" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -314,17 +314,16 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 4,500<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-5.png" alt="Mazda Axela" />
+            <img src="assets/deals-5.png" alt="Mazda Axela" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -348,17 +347,16 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 4,000<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-6.png" alt="Mazda Demio" />
+            <img src="assets/deals-6.png" alt="Mazda Demio" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -382,10 +380,9 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 3,500<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
@@ -394,7 +391,7 @@
         </div>
         <div id="Luxury" class="tab__content">
           <div class="deals__card">
-            <img src="assets/deals-7.png" alt="Mercedes C200" />
+            <img src="assets/deals-7.png" alt="Mercedes C200" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -418,17 +415,16 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 12,800<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-8.png" alt="BMW 5 Series" />
+            <img src="assets/deals-8.png" alt="BMW 5 Series" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -452,17 +448,16 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 14,000<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-9.png" alt="Audi A6" />
+            <img src="assets/deals-9.png" alt="Audi A6" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -486,10 +481,9 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 13,000<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
@@ -498,7 +492,7 @@
         </div>
         <div id="Economy" class="tab__content">
           <div class="deals__card">
-            <img src="assets/deals-10.png" alt="Nissan March" />
+            <img src="assets/deals-10.png" alt="Nissan March" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -522,17 +516,16 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 3,000<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-11.png" alt="Toyota Vitz" />
+            <img src="assets/deals-11.png" alt="Toyota Vitz" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -556,17 +549,16 @@
                 <span><i class="ri-car-line"></i></span> Petrol
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 3,200<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-12.png" alt="Honda Fit" />
+            <img src="assets/deals-12.png" alt="Honda Fit" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -590,10 +582,9 @@
                 <span><i class="ri-car-line"></i></span> Hybrid
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 3,500<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
@@ -602,7 +593,7 @@
         </div>
         <div id="Safari" class="tab__content">
           <div class="deals__card">
-            <img src="assets/deals-13.png" alt="Toyota Land Cruiser 78" />
+            <img src="assets/deals-13.png" alt="Toyota Land Cruiser 78" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -626,17 +617,16 @@
                 <span><i class="ri-car-line"></i></span> Diesel
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 15,000<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-14.png" alt="Land Rover Defender" />
+            <img src="assets/deals-14.png" alt="Land Rover Defender" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -660,17 +650,16 @@
                 <span><i class="ri-car-line"></i></span> Diesel
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 18,000<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
             </div>
           </div>
           <div class="deals__card">
-            <img src="assets/deals-15.png" alt="Toyota Land Cruiser VX" />
+            <img src="assets/deals-15.png" alt="Toyota Land Cruiser VX" loading="lazy" />
             <div class="deals__rating">
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
@@ -694,10 +683,9 @@
                 <span><i class="ri-car-line"></i></span> Diesel
               </div>
             </div>
-            <hr />
             <div class="deals__card__footer">
               <h3>KES 20,000<span>/Per Day</span></h3>
-              <a href="#">
+              <a href="#" class="check-availability">
                 Rent Now
                 <span><i class="ri-arrow-right-line"></i></span>
               </a>
@@ -716,7 +704,7 @@
         </p>
         <div class="destinations__grid">
           <div class="destination__card">
-            <img src="https://imgs.search.brave.com/01WhpKAS0EXbWqmYG9pS3Km71pYdcfvI0XbxS_3NY2A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/MTI4OTc2MS9waG90/by91bmlkZW50aWZp/YWJsZS10b3VyaXN0/cy1pbi1hLXNhZmFy/aS12ZWhpY2xlLXdh/dGNoLXdoaXRlLWJl/YXJkZWQtd2lsZGVi/ZWVzdC1pbi10aGUt/bWFzYWktbWFyYS5q/cGc_Yj0xJnM9NjEy/eDYxMiZ3PTAmaz0y/MCZjPXItQVB6aWRt/LUNUeEI1UVBVZS1F/Y1p5WWRwLTcxcGha/SmpNNmtxbm5mUEU9" alt="Maasai Mara" />
+            <img src="https://imgs.search.brave.com/01WhpKAS0EXbWqmYG9pS3Km71pYdcfvI0XbxS_3NY2A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/MTI4OTc2MS9waG90/by91bmlkZW50aWZp/YWJsZS10b3VyaXN0/cy1pbi1hLXNhZmFy/aS12ZWhpY2xlLXdh/dGNoLXdoaXRlLWJl/YXJkZWQtd2lsZGVi/ZWVzdC1pbi10aGUt/bWFzYWktbWFyYS5q/cGc_Yj0xJnM9NjEy/eDYxMiZ3PTAmaz0y/MCZjPXItQVB6aWRt/LUNUeEI1UVBVZS1F/Y1p5WWRwLTcxcGha/SmpNNmtxbm5mUEU9" alt="Maasai Mara" loading="lazy" />
             <div class="destination__content">
               <h4>Maasai Mara</h4>
               <p>Experience the Great Migration and big five safaris</p>
@@ -724,7 +712,7 @@
             </div>
           </div>
           <div class="destination__card">
-            <img src="https://imgs.search.brave.com/qhk0BZw1LTrMsZYwQFjDVROk8IARN7uynzF7jNIElKM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vcGhvdG9z/L21hc2FpLXNoZXBo/ZXJkLXdpdGgtY293/cy1waWN0dXJlLWlk/OTEyNDIyNjkyP2s9/MjAmbT05MTI0MjI2/OTImcz02MTJ4NjEy/Jnc9MCZoPVRDRS1Q/eURTOFlRODMxbEIt/UmdOMEMybW1LWjNn/U3VFR2dNbTNHV1BT/cVU9" alt="Amboseli" />
+            <img src="https://imgs.search.brave.com/qhk0BZw1LTrMsZYwQFjDVROk8IARN7uynzF7jNIElKM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vcGhvdG9z/L21hc2FpLXNoZXBo/ZXJkLXdpdGgtY293/cy1waWN0dXJlLWlk/OTEyNDIyNjkyP2s9/MjAmbT05MTI0MjI2/OTImcz02MTJ4NjEy/Jnc9MCZoPVRDRS1Q/eURTOFlRODMxbEIt/UmdOMEMybW1LWjNn/U3VFR2dNbTNHV1BT/cVU9" alt="Amboseli" loading="lazy" />
             <div class="destination__content">
               <h4>Amboseli National Park</h4>
               <p>Stunning views of Mount Kilimanjaro and elephant herds</p>
@@ -732,7 +720,7 @@
             </div>
           </div>
           <div class="destination__card">
-            <img src="https://imgs.search.brave.com/fpRew7JcqRPeq2AG4UcmLNA6dCvesIcAtH8MQBLBFK0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZGlhbmlzZWFyZXNv/cnQuZGUvbWVkaWEv/MjAxOC8xMC9EaWFu/aS1TZWEtUmVzb3J0/LTIwLTY0MHg0MDAu/anBn" alt="Diani Beach" />
+            <img src="https://imgs.search.brave.com/fpRew7JcqRPeq2AG4UcmLNA6dCvesIcAtH8MQBLBFK0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZGlhbmlzZWFyZXNv/cnQuZGUvbWVkaWEv/MjAxOC8xMC9EaWFu/aS1TZWEtUmVzb3J0/LTIwLTY0MHg0MDAu/anBn" alt="Diani Beach" loading="lazy" />
             <div class="destination__content">
               <h4>Diani Beach</h4>
               <p>Pristine white sand beaches and crystal clear waters</p>
@@ -740,7 +728,7 @@
             </div>
           </div>
           <div class="destination__card">
-            <img src="https://imgs.search.brave.com/auhnlgFP3ibbCTB08f_br-vgB0Wngaw1Ul-UzNniFMM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9rZW55/YWx1eHVyeXNhZmFy/aXMuY28udWsvd3At/Y29udGVudC91cGxv/YWRzL2ltYWdlMTIt/MTEud2VicA" alt="Lake Nakuru" />
+            <img src="https://imgs.search.brave.com/auhnlgFP3ibbCTB08f_br-vgB0Wngaw1Ul-UzNniFMM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9rZW55/YWx1eHVyeXNhZmFy/aXMuY28udWsvd3At/Y29udGVudC91cGxv/YWRzL2ltYWdlMTIt/MTEud2VicA" alt="Lake Nakuru" loading="lazy" />
             <div class="destination__content">
               <h4>Lake Nakuru</h4>
               <p>Home to thousands of flamingos and rhino sanctuary</p>
@@ -753,7 +741,7 @@
 
     <section class="choose__container" id="choose">
       <div class="choose__image">
-        <img src="assets/choose.png" alt="choose" />
+        <img src="assets/choose.png" alt="choose" loading="lazy" />
       </div>
       <div class="choose__content">
         <h2 class="section__header">Why choose us</h2>
@@ -817,31 +805,31 @@
       </p>
       <div class="faq__grid">
         <div class="faq__item">
-          <h4>What documents do I need to rent a car in Kenya?</h4>
+          <h4>What documents do I need to rent a car in Kenya? <i class="ri-arrow-down-s-line"></i></h4>
           <p>You need a valid driving license, passport or national ID, and a credit card for the security deposit. International visitors require a valid passport and an international driving permit.</p>
         </div>
         <div class="faq__item">
-          <h4>Is insurance included in the rental price?</h4>
+          <h4>Is insurance included in the rental price? <i class="ri-arrow-down-s-line"></i></h4>
           <p>Yes, all our rentals include basic insurance coverage. Additional comprehensive insurance options are available for extra protection.</p>
         </div>
         <div class="faq__item">
-          <h4>Can I drive the rental car to neighboring countries?</h4>
+          <h4>Can I drive the rental car to neighboring countries? <i class="ri-arrow-down-s-line"></i></h4>
           <p>Cross-border travel is possible with prior arrangement and additional documentation. Please contact us at least 48 hours before your trip to arrange this.</p>
         </div>
         <div class="faq__item">
-          <h4>What happens if the car breaks down?</h4>
+          <h4>What happens if the car breaks down? <i class="ri-arrow-down-s-line"></i></h4>
           <p>We provide 24/7 roadside assistance throughout Kenya. In case of a breakdown, contact our emergency number immediately for prompt support.</p>
         </div>
         <div class="faq__item">
-          <h4>Are there mileage restrictions?</h4>
+          <h4>Are there mileage restrictions? <i class="ri-arrow-down-s-line"></i></h4>
           <p>Most of our rentals come with unlimited mileage within Kenya. Special rates apply for long-distance travel to remote areas.</p>
         </div>
         <div class="faq__item">
-          <h4>What payment methods do you accept?</h4>
+          <h4>What payment methods do you accept? <i class="ri-arrow-down-s-line"></i></h4>
           <p>We accept all major credit cards, mobile money payments (M-Pesa, Airtel Money), and bank transfers. Cash payments are also accepted at our offices.</p>
         </div>
         <div class="faq__item">
-          <h4>What are your booking policies?</h4>
+          <h4>What are your booking policies? <i class="ri-arrow-down-s-line"></i></h4>
           <p>Free cancellation up to 24 hours before pickup. No hidden charges. Pay via M-Pesa, Credit/Debit Cards, Bank Transfer. Driver available at +KES 2,000/day. Long-term rentals available with monthly discounts.</p>
         </div>
       </div>
@@ -849,7 +837,7 @@
 
     <section class="subscribe__container">
       <div class="subscribe__image">
-        <img src="assets/subscribe.png" alt="subscribe" />
+        <img src="assets/subscribe.png" alt="subscribe" loading="lazy" />
       </div>
       <div class="subscribe__content">
         <h2 class="section__header">
@@ -861,7 +849,7 @@
           out on special promotions and seasonal discounts.
         </p>
         <form action="/">
-          <input type="text" placeholder="Your Email" />
+          <input type="email" placeholder="Your Email" required />
           <button class="btn">Subscribe</button>
         </form>
       </div>
@@ -881,7 +869,7 @@
           <div class="swiper-slide">
             <div class="client__card">
               <div class="client__details">
-                <img src="assets/client-1.jpg" alt="client" />
+                <img src="assets/client-1.jpg" alt="client" loading="lazy" />
                 <div>
                   <h4>Brian M.</h4>
                   <div class="client__rating">
@@ -901,7 +889,7 @@
           <div class="swiper-slide">
             <div class="client__card">
               <div class="client__details">
-                <img src="assets/client-2.jpg" alt="client" />
+                <img src="assets/client-2.jpg" alt="client" loading="lazy" />
                 <div>
                   <h4>Sophia A.</h4>
                   <div class="client__rating">
@@ -921,7 +909,7 @@
           <div class="swiper-slide">
             <div class="client__card">
               <div class="client__details">
-                <img src="assets/client-3.jpg" alt="client" />
+                <img src="assets/client-3.jpg" alt="client" loading="lazy" />
                 <div>
                   <h4>Patrick O.</h4>
                   <div class="client__rating">
@@ -941,7 +929,7 @@
           <div class="swiper-slide">
             <div class="client__card">
               <div class="client__details">
-                <img src="assets/client-4.jpg" alt="client" />
+                <img src="assets/client-4.jpg" alt="client" loading="lazy" />
                 <div>
                   <h4>James Kiprop</h4>
                   <div class="client__rating">
@@ -963,7 +951,7 @@
           <div class="swiper-slide">
             <div class="client__card">
               <div class="client__details">
-                <img src="assets/client-5.jpg" alt="client" />
+                <img src="assets/client-5.jpg" alt="client" loading="lazy" />
                 <div>
                   <h4>Sarah Thompson</h4>
                   <div class="client__rating">
@@ -983,6 +971,12 @@
             </div>
           </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
 
